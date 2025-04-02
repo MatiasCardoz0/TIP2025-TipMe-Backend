@@ -1,0 +1,24 @@
+[
+  {
+    "ContainingType": "TipMeBackend.Controllers.WebSocketController",
+    "Method": "ConnectWebSocket",
+    "RelativePath": "api/connect",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mesaId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "nb3kNCxMct0Ca4P4j5buYTA51SZSW+ZXOcimiy0pr8g=",
+  "Source": "TipMeBackend",
+  "BasePath": "_content/TipMeBackend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
