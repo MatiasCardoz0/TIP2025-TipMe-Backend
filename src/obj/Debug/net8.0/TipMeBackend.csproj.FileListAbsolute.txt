@@ -42,3 +42,14 @@ C:\Users\Matias\source\repos\TipMeBackend\obj\Debug\net8.0\refint\TipMeBackend.d
 C:\Users\Matias\source\repos\TipMeBackend\obj\Debug\net8.0\TipMeBackend.pdb
 C:\Users\Matias\source\repos\TipMeBackend\obj\Debug\net8.0\TipMeBackend.genruntimeconfig.cache
 C:\Users\Matias\source\repos\TipMeBackend\obj\Debug\net8.0\ref\TipMeBackend.dll
+C:\Users\Matias\source\repos\TipMeBackend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Matias\source\repos\TipMeBackend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Matias\source\repos\TipMeBackend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Matias\source\repos\TipMeBackend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Matias\source\repos\TipMeBackend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Matias\source\repos\TipMeBackend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Matias\source\repos\TipMeBackend\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\Matias\source\repos\TipMeBackend\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Matias\source\repos\TipMeBackend\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\Matias\source\repos\TipMeBackend\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\Matias\source\repos\TipMeBackend\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll

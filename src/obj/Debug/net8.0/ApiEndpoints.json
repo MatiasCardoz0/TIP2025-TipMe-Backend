@@ -20,5 +20,37 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "TipMeBackend.Controllers.MesaController",
+    "Method": "grabarMesa",
+    "RelativePath": "api/mesa/grabar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mesaDto",
+        "Type": "TipMeBackend.Controllers.DTOs.MesaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TipMeBackend.Controllers.MesaController",
+    "Method": "getMesas",
+    "RelativePath": "api/mesa/historico/:idMozo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idMozo",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]
