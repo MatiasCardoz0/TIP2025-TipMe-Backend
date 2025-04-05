@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matias\\source\\repos\\TipMeBackend\\TipMeBackend.csproj": {}
+    "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\TipMeBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matias\\source\\repos\\TipMeBackend\\TipMeBackend.csproj": {
+    "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\TipMeBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matias\\source\\repos\\TipMeBackend\\TipMeBackend.csproj",
+        "projectUniqueName": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\TipMeBackend.csproj",
         "projectName": "TipMeBackend",
-        "projectPath": "C:\\Users\\Matias\\source\\repos\\TipMeBackend\\TipMeBackend.csproj",
+        "projectPath": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\TipMeBackend.csproj",
         "packagesPath": "C:\\Users\\Matias\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matias\\source\\repos\\TipMeBackend\\obj\\",
+        "outputPath": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

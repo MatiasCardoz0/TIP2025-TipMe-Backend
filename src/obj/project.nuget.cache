@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9wDItCtK48w=",
+  "dgSpecHash": "Ii8UOtnq9Ic=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Matias\\source\\repos\\TipMeBackend\\TipMeBackend.csproj",
+  "projectFilePath": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\TipMeBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Matias\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.14\\microsoft.aspnetcore.authentication.jwtbearer.8.0.14.nupkg.sha512",
     "C:\\Users\\Matias\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.14\\microsoft.entityframeworkcore.8.0.14.nupkg.sha512",

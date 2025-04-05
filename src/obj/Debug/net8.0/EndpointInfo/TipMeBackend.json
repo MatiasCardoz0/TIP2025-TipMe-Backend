@@ -58,6 +58,59 @@
         }
       }
     },
+    "/api/propina/:idMozo": {
+      "get": {
+        "tags": [
+          "Propina"
+        ],
+        "parameters": [
+          {
+            "name": "idMozo",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/propina/grabar": {
+      "post": {
+        "tags": [
+          "Propina"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PropinaDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PropinaDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PropinaDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/connect": {
       "get": {
         "tags": [
@@ -103,6 +156,28 @@
             "nullable": true
           },
           "estado": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PropinaDTO": {
+        "type": "object",
+        "properties": {
+          "monto": {
+            "type": "number",
+            "format": "double"
+          },
+          "fecha": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "idMesa": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idMozo": {
             "type": "integer",
             "format": "int32"
           }

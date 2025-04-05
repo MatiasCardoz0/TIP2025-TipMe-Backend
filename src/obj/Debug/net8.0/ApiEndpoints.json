@@ -52,5 +52,37 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TipMeBackend.Controllers.PropinaController",
+    "Method": "getPropinas",
+    "RelativePath": "api/propina/:idMozo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idMozo",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TipMeBackend.Controllers.PropinaController",
+    "Method": "grabarPropina",
+    "RelativePath": "api/propina/grabar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "propinaDTO",
+        "Type": "TipMeBackend.Controllers.DTOs.PropinaDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

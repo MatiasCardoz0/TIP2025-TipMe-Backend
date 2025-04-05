@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using TipMeBackend.Data.MesaRepository;
+using TipMeBackend.Data.PropinaRepository;
 using TipMeBackend.Middlewares;
 using TipMeBackend.Models;
 using TipMeBackend.Services.MesaService;
+using TipMeBackend.Services.PropinaService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,7 +20,8 @@ builder.Services.AddControllers();
 builder.Services.AddSingleton<WebSocketHandler>();
 builder.Services.AddScoped<IMesaRepository, MesaRepository>();
 builder.Services.AddScoped<IMesaService,MesaService>();
-
+builder.Services.AddScoped<IPropinaService, PropinaService>();
+builder.Services.AddScoped<IPropinaRepository, PropinaRepository>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
