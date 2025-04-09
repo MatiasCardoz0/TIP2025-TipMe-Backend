@@ -3,52 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\data\\propinarepository\\propinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:data\\propinarepository\\propinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\controllers\\propinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:controllers\\propinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\services\\propinaservice\\propinaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:services\\propinaservice\\propinaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\data\\propinarepository\\ipropinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:data\\propinarepository\\ipropinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\data\\propinarepository\\propinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:data\\propinarepository\\propinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\models\\propina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:models\\propina.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\services\\mesaservice\\mesaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:services\\mesaservice\\mesaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\controllers\\mesacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:controllers\\mesacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\controllers\\dtos\\propinadtoget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:controllers\\dtos\\propinadtoget.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\data\\mesarepository\\mesarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:data\\mesarepository\\mesarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\services\\propinaservice\\ipropinaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:services\\propinaservice\\ipropinaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\controllers\\propinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:controllers\\propinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\data\\propinarepository\\ipropinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:data\\propinarepository\\ipropinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:models\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\models\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:models\\mesa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,71 +38,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IPropinaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Data\\PropinaRepository\\IPropinaRepository.cs",
-              "RelativeDocumentMoniker": "Data\\PropinaRepository\\IPropinaRepository.cs",
-              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Data\\PropinaRepository\\IPropinaRepository.cs",
-              "RelativeToolTip": "Data\\PropinaRepository\\IPropinaRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA8AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "PropinaController.cs",
+              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\PropinaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PropinaController.cs",
+              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\PropinaController.cs",
+              "RelativeToolTip": "Controllers\\PropinaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T23:50:39.476Z",
+              "WhenOpened": "2025-04-09T21:35:51.948Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MesaService.cs",
-              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\MesaService\\MesaService.cs",
-              "RelativeDocumentMoniker": "Services\\MesaService\\MesaService.cs",
-              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\MesaService\\MesaService.cs",
-              "RelativeToolTip": "Services\\MesaService\\MesaService.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Title": "MesaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Data\\MesaRepository\\MesaRepository.cs",
+              "RelativeDocumentMoniker": "Data\\MesaRepository\\MesaRepository.cs",
+              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Data\\MesaRepository\\MesaRepository.cs",
+              "RelativeToolTip": "Data\\MesaRepository\\MesaRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T23:48:49.433Z",
+              "WhenOpened": "2025-04-09T21:31:09.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PropinaDTOGet.cs",
+              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\DTOs\\PropinaDTOGet.cs",
+              "RelativeDocumentMoniker": "Controllers\\DTOs\\PropinaDTOGet.cs",
+              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\DTOs\\PropinaDTOGet.cs",
+              "RelativeToolTip": "Controllers\\DTOs\\PropinaDTOGet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T21:33:05.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PropinaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Data\\PropinaRepository\\PropinaRepository.cs",
+              "RelativeDocumentMoniker": "Data\\PropinaRepository\\PropinaRepository.cs",
+              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Data\\PropinaRepository\\PropinaRepository.cs",
+              "RelativeToolTip": "Data\\PropinaRepository\\PropinaRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAgwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T21:30:27.589Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "MesaController.cs",
-              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\MesaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MesaController.cs",
-              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\MesaController.cs",
-              "RelativeToolTip": "Controllers\\MesaController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwCoAAAAJAAAAAAAAAA==",
+              "Title": "IPropinaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Data\\PropinaRepository\\IPropinaRepository.cs",
+              "RelativeDocumentMoniker": "Data\\PropinaRepository\\IPropinaRepository.cs",
+              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Data\\PropinaRepository\\IPropinaRepository.cs",
+              "RelativeToolTip": "Data\\PropinaRepository\\IPropinaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T23:46:56.885Z",
+              "WhenOpened": "2025-04-09T21:30:11.503Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAABcAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T20:52:51.551Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Context.cs",
-              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Models\\Context.cs",
-              "RelativeDocumentMoniker": "Models\\Context.cs",
-              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Models\\Context.cs",
-              "RelativeToolTip": "Models\\Context.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA5wBcAAABdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T20:46:48.614Z"
             },
             {
               "$type": "Document",
@@ -132,86 +113,22 @@
               "RelativeDocumentMoniker": "Services\\PropinaService\\PropinaService.cs",
               "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\PropinaService\\PropinaService.cs",
               "RelativeToolTip": "Services\\PropinaService\\PropinaService.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T20:41:09.068Z",
+              "WhenOpened": "2025-04-09T21:29:54.3Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IPropinaService.cs",
-              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\PropinaService\\IPropinaService.cs",
-              "RelativeDocumentMoniker": "Services\\PropinaService\\IPropinaService.cs",
-              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\PropinaService\\IPropinaService.cs",
-              "RelativeToolTip": "Services\\PropinaService\\IPropinaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAgAAABCAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Context.cs",
+              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Models\\Context.cs",
+              "RelativeDocumentMoniker": "Models\\Context.cs",
+              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Models\\Context.cs",
+              "RelativeToolTip": "Models\\Context.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T20:40:34.474Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MesaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Data\\MesaRepository\\MesaRepository.cs",
-              "RelativeDocumentMoniker": "Data\\MesaRepository\\MesaRepository.cs",
-              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Data\\MesaRepository\\MesaRepository.cs",
-              "RelativeToolTip": "Data\\MesaRepository\\MesaRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T20:38:03.972Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PropinaRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Data\\PropinaRepository\\PropinaRepository.cs",
-              "RelativeDocumentMoniker": "Data\\PropinaRepository\\PropinaRepository.cs",
-              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Data\\PropinaRepository\\PropinaRepository.cs",
-              "RelativeToolTip": "Data\\PropinaRepository\\PropinaRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T20:37:52.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PropinaController.cs",
-              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\PropinaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PropinaController.cs",
-              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\PropinaController.cs",
-              "RelativeToolTip": "Controllers\\PropinaController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAgwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T20:34:42.967Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Mesa.cs",
-              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Models\\Mesa.cs",
-              "RelativeDocumentMoniker": "Models\\Mesa.cs",
-              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Models\\Mesa.cs",
-              "RelativeToolTip": "Models\\Mesa.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T20:31:19.695Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Propina.cs",
-              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Models\\Propina.cs",
-              "RelativeDocumentMoniker": "Models\\Propina.cs",
-              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Models\\Propina.cs",
-              "RelativeToolTip": "Models\\Propina.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-04T20:29:56.272Z",
+              "WhenOpened": "2025-04-09T21:04:46.473Z",
               "EditorCaption": ""
             }
           ]

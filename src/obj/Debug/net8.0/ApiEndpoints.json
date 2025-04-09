@@ -40,7 +40,7 @@
   {
     "ContainingType": "TipMeBackend.Controllers.MesaController",
     "Method": "getMesas",
-    "RelativePath": "api/mesa/historico/:idMozo",
+    "RelativePath": "api/mesa/historico/{idMozo}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -48,7 +48,7 @@
       {
         "Name": "idMozo",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
@@ -56,7 +56,7 @@
   {
     "ContainingType": "TipMeBackend.Controllers.PropinaController",
     "Method": "getPropinas",
-    "RelativePath": "api/propina/:idMozo",
+    "RelativePath": "api/propina/{idMozo}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -64,7 +64,7 @@
       {
         "Name": "idMozo",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

@@ -16,10 +16,10 @@ namespace TipMeBackend.Controllers
             _propinaService = propinaService;
         }
 
-        [HttpGet(":idMozo")]
+        [HttpGet("{idMozo}")]
         public async Task<IActionResult> getPropinas(int idMozo)
         {
-            Response<List<Propina>> mesas = await _propinaService.ObtenerPropinas(idMozo);
+            Response<List<PropinaDTOGet>> mesas = await _propinaService.ObtenerPropinas(idMozo);
 
             if (mesas.StatusCode == 200) return Ok(mesas);
             else

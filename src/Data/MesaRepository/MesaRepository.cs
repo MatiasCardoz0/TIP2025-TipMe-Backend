@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using TipMeBackend.Controllers.DTOs;
 using TipMeBackend.Models;
 
 namespace TipMeBackend.Data.MesaRepository
@@ -20,14 +21,23 @@ namespace TipMeBackend.Data.MesaRepository
             return new Response<string>(respuesta > 0 ? "Registro realizado con éxito" : "Ha ocurrido un error al realizar el registro.", respuesta > 0 ? 200 : 400);
         }
 
-        public async Task<Response<List<Mesa>>> ObtenerMesas(int idMozo)
+        public async Task<Response<List<MesaDTOGet>>> ObtenerMesas(int idMozo)
         {
-            var rta = await _context.Mesa
-                .Where(h => h.MozoId == idMozo)
+            var estados = await _context.Estado.ToListAsync();
+           
+            var mesas = await _context.Mesa.Where(h => h.MozoId == idMozo)
                 .OrderBy(h => h.Nombre)
-                .ToListAsync(); ;
+                .ToListAsync();
 
-            return new Response<List<Mesa>>(rta,200);           
+
+            var rta = mesas.Join(estados, 
+                mesa => mesa.Estado,
+                estado => estado.Id,
+                (mesa, estado) => new MesaDTOGet(mesa.Nombre, mesa.Numero, mesa.MozoId, mesa.QR, mesa.Estado, estado.Nombre)).OrderBy(h => h.Nombre)
+                .ToList();
+
+
+            return new Response<List<MesaDTOGet>>(rta,200);           
         }
     }
 }

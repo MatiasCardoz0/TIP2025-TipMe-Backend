@@ -5,7 +5,7 @@ namespace TipMeBackend.Services.PropinaService
 {
     public interface IPropinaService
     {
-        Task<Response<List<Propina>>> ObtenerPropinas(int idMozo);
+        Task<Response<List<PropinaDTOGet>>> ObtenerPropinas(int idMozo);
         Task<Response<string>> GrabarPropina(PropinaDTO propinaDTO);
     }
 }

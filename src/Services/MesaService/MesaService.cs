@@ -49,7 +49,7 @@ namespace TipMeBackend.Services.MesaService
             
         }
 
-        public async Task<Response<List<Mesa>>> ObtenerMesas(int idMozo)
+        public async Task<Response<List<MesaDTOGet>>> ObtenerMesas(int idMozo)
         {
             return await _mesaRepository.ObtenerMesas(idMozo);
         }

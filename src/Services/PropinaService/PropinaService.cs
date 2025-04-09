@@ -24,7 +24,7 @@ namespace TipMeBackend.Services.PropinaService
             return await _propinaRepository.GrabarPropina(nuevaPropina);
         }
 
-        public async Task<Response<List<Propina>>> ObtenerPropinas(int idMozo)
+        public async Task<Response<List<PropinaDTOGet>>> ObtenerPropinas(int idMozo)
         {
             return await _propinaRepository.ObtenerPropinas(idMozo);
         }

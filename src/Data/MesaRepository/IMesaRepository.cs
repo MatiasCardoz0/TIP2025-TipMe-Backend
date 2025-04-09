@@ -1,10 +1,11 @@
-﻿using TipMeBackend.Models;
+﻿using TipMeBackend.Controllers.DTOs;
+using TipMeBackend.Models;
 
 namespace TipMeBackend.Data.MesaRepository
 {
     public interface IMesaRepository
     {
         Task<Response<string>> GrabarMesa(Mesa mesa);
-        Task<Response<List<Mesa>>> ObtenerMesas(int idMozo);
+        Task<Response<List<MesaDTOGet>>> ObtenerMesas(int idMozo);
     }
 }

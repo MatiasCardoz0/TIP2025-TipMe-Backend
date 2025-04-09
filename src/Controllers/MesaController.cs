@@ -18,10 +18,10 @@ namespace TipMeBackend.Controllers
             _mesaService = mesaService;
 
         }
-        [HttpGet("historico/:idMozo")]
+        [HttpGet("historico/{idMozo}")]
         public async Task<IActionResult> getMesas(int idMozo)
         {
-            Response<List<Mesa>> mesas = await _mesaService.ObtenerMesas(idMozo);
+            Response<List<MesaDTOGet>> mesas = await _mesaService.ObtenerMesas(idMozo);
 
             if (mesas.StatusCode == 200) return Ok(mesas);
             else

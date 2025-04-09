@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/mesa/historico/:idMozo": {
+    "/api/mesa/historico/{idMozo}": {
       "get": {
         "tags": [
           "Mesa"
@@ -13,7 +13,8 @@
         "parameters": [
           {
             "name": "idMozo",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
@@ -58,7 +59,7 @@
         }
       }
     },
-    "/api/propina/:idMozo": {
+    "/api/propina/{idMozo}": {
       "get": {
         "tags": [
           "Propina"
@@ -66,7 +67,8 @@
         "parameters": [
           {
             "name": "idMozo",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"
