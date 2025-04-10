@@ -19,9 +19,12 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.WithOrigins("http://localhost:8081") // Cambia este valor por el origen correcto.
-              .AllowAnyHeader()
-              .AllowAnyMethod();
+        options.AddPolicy("AllowAll", policy =>
+        {
+            policy.AllowAnyOrigin()
+                  .AllowAnyMethod()
+                  .AllowAnyHeader();
+        });
     });
 });
 
@@ -34,6 +37,11 @@ builder.Services.AddScoped<IPropinaRepository, PropinaRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(5065); // HTTP
+    //options.ListenAnyIP(7241, listenOptions => listenOptions.UseHttps()); // HTTPS
+});
 
 var key = Encoding.ASCII.GetBytes(builder.Configuration["JwtSettings:SecretKey"]);
 builder.Services.AddAuthentication(options =>
@@ -69,15 +77,6 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 
-//app.UseEndpoints(endpoints =>
-//{
-//    _ = endpoints.Map("/ws", async context =>
-//    {
-//        var handler = new WebSocketHandler();
-//        await handler.HandleConnectionAsync(context);
-//    });
-//});
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -87,7 +86,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseCors();
+app.UseCors("AllowAll");
 
 app.MapControllers();
 
