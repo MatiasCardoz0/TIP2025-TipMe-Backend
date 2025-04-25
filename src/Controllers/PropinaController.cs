@@ -1,6 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Security.Cryptography;
 using TipMeBackend.Controllers.DTOs;
 using TipMeBackend.Models;
+using TipMeBackend.Services;
+using TipMeBackend.Services.NotificationService;
+using TipMeBackend.Services.NotificationService.NotificationService;
 using TipMeBackend.Services.PropinaService;
 
 namespace TipMeBackend.Controllers
@@ -10,10 +14,12 @@ namespace TipMeBackend.Controllers
     public class PropinaController : ControllerBase
     {
         private readonly IPropinaService _propinaService;
+        private readonly INotificationService _notificationService;
 
-        public PropinaController(IPropinaService propinaService)
+        public PropinaController(IPropinaService propinaService, INotificationService notificationService)
         {
             _propinaService = propinaService;
+            _notificationService = notificationService;
         }
 
         [HttpGet("{idMozo}")]
@@ -34,7 +40,15 @@ namespace TipMeBackend.Controllers
         {
             var rta = await _propinaService.GrabarPropina(propinaDTO);
 
-            if (rta.StatusCode == 200) return Ok(rta);
+            if (rta.StatusCode == 200){
+                await _notificationService.SendPushNotification(
+                    propinaDTO.IdMozo,
+                    "Nueva Propina",
+                    $"Recibiste una propina de ${propinaDTO.Monto}!"
+                );
+
+                return Ok(rta); 
+            }
             else
             {
                 return BadRequest(rta);
