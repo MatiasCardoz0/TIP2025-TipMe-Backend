@@ -3,19 +3,8 @@
 ################################################################################
 
 /.vs
-/src/obj/Debug/net8.0/
 /src/.vs/
-/src/.vs/ProjectEvaluation
-/src/.vs/TipMeBackend/FileContentIndex
-/src/bin/Debug/net8.0
-/src/.vs/TipMeBackend/v17/.futdcache.v2
-/src/obj/Debug/net8.0/TipMeBackend.AssemblyInfo.cs
-/src/obj/Debug/net8.0/TipMeBackend.AssemblyInfoInputs.cache
-/src/obj/Debug/net8.0/TipMeBackend.csproj.AssemblyReference.cache
-/src/obj/Debug/net8.0/TipMeBackend.GeneratedMSBuildEditorConfig.editorconfig
-/src/obj/Release/net8.0
+/src/bin/Debug/net8.0/
+/src/obj/Release/net8.0/
+/src/obj/Debug/net8.0/
 
-/src/obj/Debug/net8.0/TipMeBackend.AssemblyInfoInputs.cache
-/src/obj/Debug/net8.0/TipMeBackend.csproj.AssemblyReference.cache
-/src/obj/Debug/net8.0/TipMeBackend.GeneratedMSBuildEditorConfig.editorconfig
-/src/.vs/TipMeBackend/v17/.futdcache.v2
