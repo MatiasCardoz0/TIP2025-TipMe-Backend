@@ -8,3 +8,10 @@
 /src/obj/Release/net8.0/
 /src/obj/Debug/net8.0/
 
+/src/.vs/ProjectEvaluation/
+/src/.vs/TipMeBackend/DesignTimeBuild/.dtbcache.v2
+/src/.vs/TipMeBackend/FileContentIndex/
+/src/.vs/ProjectEvaluation/tipmebackend.metadata.v9.bin
+/src/obj/Debug/net8.0/apphost.exe
+/src/obj/Debug/net8.0/apphost.exe
+/src/Properties/launchSettings.json

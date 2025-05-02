@@ -15,14 +15,13 @@ namespace TipMeBackend.Controllers
         }
 
         [HttpGet("connect")]
-        public async Task ConnectWebSocket([FromQuery] int mesaId)
+        public async Task ConnectWebSocket([FromQuery] int userId, [FromQuery] bool esMozo)
         {
             //Verifico que sea una conexion de websocket
             if (HttpContext.WebSockets.IsWebSocketRequest)
             {
                 var webSocket = await HttpContext.WebSockets.AcceptWebSocketAsync();
-                var handler = new WebSocketHandler();
-                await handler.HandleConnectionAsync(HttpContext, webSocket);
+                await _webSocketHandler.HandleConnectionAsync(HttpContext, webSocket, userId, esMozo);
             }
             else
             // Sino bad request porque no es solicitud webSocket
