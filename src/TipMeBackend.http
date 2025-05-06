@@ -1,6 +1,0 @@
-@TipMeBackend_HostAddress = http://localhost:5065
-
-GET {{TipMeBackend_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
