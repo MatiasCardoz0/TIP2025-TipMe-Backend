@@ -7,5 +7,6 @@ namespace TipMeBackend.Services.MesaService
     {
         Task<Response<List<MesaDTOGet>>> ObtenerMesas(int idMozo);
         Task<Response<string>> GrabarMesa(MesaDTO mesaDto);
+        Task<Response<(string, int)>> LlamarMozo(int idMesa);
     }
 }

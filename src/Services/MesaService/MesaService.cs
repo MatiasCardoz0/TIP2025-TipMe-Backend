@@ -53,5 +53,10 @@ namespace TipMeBackend.Services.MesaService
         {
             return await _mesaRepository.ObtenerMesas(idMozo);
         }
+
+        public async Task<Response<(string, int)>> LlamarMozo(int idMesa)
+        {
+            return await _mesaRepository.LlamarMozo(idMesa);
+        }
     }
 }
