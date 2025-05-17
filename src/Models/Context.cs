@@ -10,6 +10,7 @@ namespace TipMeBackend.Models
         public DbSet<Mesa> Mesa { get; set; }
         public DbSet<Propina> Propina { get; set; }
         public DbSet<EstadoMesa> Estado { get; set; }
+        public DbSet<Mozo> Mozo { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -34,6 +35,16 @@ namespace TipMeBackend.Models
             modelBuilder.Entity<EstadoMesa>().Property(m => m.Id).HasColumnName("ESTADO_ID");
             modelBuilder.Entity<EstadoMesa>().Property(m => m.Nombre).HasColumnName("ESTADO_NOMBRE");
             modelBuilder.Entity<EstadoMesa>().Property(m => m.Descripcion).HasColumnName("ESTADO_DESCRIPCION");
+
+            modelBuilder.Entity<Mozo>().Property(m => m.Id).HasColumnName("MOZO_ID");
+            modelBuilder.Entity<Mozo>().Property(m => m.Nombre).HasColumnName("MOZO_NOMBRE");
+            modelBuilder.Entity<Mozo>().Property(m => m.Apellido).HasColumnName("MOZO_APELLIDO");
+            modelBuilder.Entity<Mozo>().Property(m => m.Email).HasColumnName("MOZO_EMAIL");
+            modelBuilder.Entity<Mozo>().Property(m => m.Password).HasColumnName("MOZO_PASSWORD");
+            modelBuilder.Entity<Mozo>().Property(m => m.CVU).HasColumnName("MOZO_CVU");
+            modelBuilder.Entity<Mozo>().Property(m => m.Alias).HasColumnName("MOZO_ALIAS");
+
+
         }
     }
 }

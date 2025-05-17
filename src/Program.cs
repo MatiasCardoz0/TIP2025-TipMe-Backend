@@ -4,10 +4,13 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using TipMeBackend.Data.MesaRepository;
 using TipMeBackend.Data.PropinaRepository;
+using TipMeBackend.Data.UsuarioRepository;
 using TipMeBackend.Middlewares;
 using TipMeBackend.Models;
 using TipMeBackend.Services.MesaService;
 using TipMeBackend.Services.PropinaService;
+using TipMeBackend.Services.UsuarioService;
+using TipMeBackend.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,10 +32,13 @@ builder.Services.AddCors(options =>
 });
 
 builder.Services.AddSingleton<WebSocketHandler>();
+builder.Services.AddSingleton<JwtService>();
 builder.Services.AddScoped<IMesaRepository, MesaRepository>();
 builder.Services.AddScoped<IMesaService,MesaService>();
 builder.Services.AddScoped<IPropinaService, PropinaService>();
 builder.Services.AddScoped<IPropinaRepository, PropinaRepository>();
+builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddScoped<IUsuarioService, UserService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
