@@ -22,7 +22,7 @@ namespace TipMeBackend.Controllers
     public async Task<IActionResult> Login([FromBody] AuthDTO dto)
     {
         var response = await _usuarioService.ObtenerAuthData(dto.Email);
-        if (response == null)
+        if (response.Data == null)
             return Unauthorized(new { message = "Credenciales inválidas" });
 
         if (response.Data.Password != dto.Password)
