@@ -33,7 +33,7 @@ namespace TipMeBackend.Controllers
 
         [HttpPost("grabar")]
         public async Task<IActionResult> grabarMesa([FromBody] MesaDTO mesaDto)
-        {            
+        {
             var rta = await _mesaService.GrabarMesa(mesaDto);
 
             if (rta.StatusCode == 200) return Ok(rta);
@@ -45,12 +45,30 @@ namespace TipMeBackend.Controllers
 
         //endpoint para recibir el llamado del mozo desde el cliente
         [HttpPost("llamarMozo")]
-        public async Task<IActionResult> recibirLlamado(int idMesa)
+        public async Task<IActionResult> recibirLlamado(int idMesa, int idMozo)
         {
             var rta = await _mesaService.LlamarMozo(idMesa);
 
             string message = $"Llamado de la mesa {rta.Data.Item2}";
-            await WebSocketHandler.SendMessageToMozoAsync(1, message); //mozo 1
+            await WebSocketHandler.SendMessageToMozoAsync(idMozo, message);
+
+            if (rta.StatusCode == 200)
+            {
+                return Ok(rta);
+            }
+            else
+            {
+                return BadRequest(rta);
+            }
+        }
+
+        [HttpPost("pedirCuenta")]
+        public async Task<IActionResult> pedirCuenta(int idMesa, int idMozo)
+        {
+            var rta = await _mesaService.PedirCuenta(idMesa);
+
+            string message = $"Pedido de cuenta de la mesa {rta.Data.Item2}";
+            await WebSocketHandler.SendMessageToMozoAsync(idMozo, message);
 
             if (rta.StatusCode == 200)
             {

@@ -17,8 +17,8 @@ namespace TipMeBackend.Services.UsuarioService
         {
             // User newUser = new Mozo
             // {
-            //     Email = userDto.Email,
-            //     Password = userDto.Password,
+            //     Email = authDto.Email,
+            //     Password = authDto.Password,
             //     ..
             // };
 
@@ -29,5 +29,18 @@ namespace TipMeBackend.Services.UsuarioService
         {
             return await _userRepository.ObtenerAuthData(email);
         }
+
+        public async Task<Response<string>> ActualizarUsuario(Mozo mozoDto)
+        {
+            // User newUser = new Mozo
+            // {
+            //     Email = authDto.Email,
+            //     Password = authDto.Password,
+            //     ..
+            // };
+
+            return null;
+        }
     }
+
 }

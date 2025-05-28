@@ -48,13 +48,40 @@ namespace TipMeBackend.Data.MesaRepository
                 return new Response<(string, int)>(("No se encontró la mesa",0), 404);
             }
 
-            mesa.Estado = 4; // "Llamar Mozo"
-            int respuesta = await _context.SaveChangesAsync();
+            int respuesta = await CambiarEstadoMesa(idMesa, 4); // "Llamar Mozo"
         
             var mensaje = respuesta > 0 ? "Llamado de mozo registrado con éxito" : "Ha ocurrido un error al registrar el llamado de mozo.";
 
             return new Response<(string, int)>((mensaje, mesa.Numero), 200);
 
+        }
+
+        public async Task<Response<(string,int)>> PedirCuenta(int idMesa)
+        {
+            var mesa = await _context.Mesa.FirstOrDefaultAsync(h => h.Id == idMesa);
+            if (mesa == null)
+            {
+                return new Response<(string, int)>(("No se encontró la mesa",0), 404);
+            }
+         
+            int respuesta = await CambiarEstadoMesa(idMesa, 8); // "Pedir Cuenta"
+
+            var mensaje = respuesta > 0 ? "Pedido de cuenta registrado con éxito" : "Ha ocurrido un error al registrar el pedido de cuenta.";
+
+            return new Response<(string, int)>((mensaje, mesa.Numero), 200);
+        }
+
+
+        public async Task<int> CambiarEstadoMesa(int idMesa, int estado)
+        {
+            var mesa = await _context.Mesa.FirstOrDefaultAsync(h => h.Id == idMesa);
+            if (mesa == null)
+            {
+                return 0;
+            }
+            mesa.Estado = estado;
+
+            return await _context.SaveChangesAsync();
         }
     }
 }
