@@ -21,7 +21,7 @@ namespace TipMeBackend.Data.MesaRepository
             return new Response<string>(respuesta > 0 ? "Registro realizado con éxito" : "Ha ocurrido un error al realizar el registro.", respuesta > 0 ? 200 : 400);
         }
 
-        public async Task<Response<List<MesaDTOGet>>> ObtenerMesas(int idMozo)
+        public async Task<Response<List<MesaDTOBase>>> ObtenerMesas(int idMozo)
         {
             var estados = await _context.Estado.ToListAsync();
            
@@ -33,11 +33,11 @@ namespace TipMeBackend.Data.MesaRepository
             var rta = mesas.Join(estados, 
                 mesa => mesa.Estado,
                 estado => estado.Id,
-                (mesa, estado) => new MesaDTOGet(mesa.Nombre, mesa.Numero, mesa.MozoId, mesa.QR, mesa.Estado, estado.Nombre)).OrderBy(h => h.Nombre)
+                (mesa, estado) => new MesaDTOBase(mesa.Id, mesa.Nombre, mesa.Numero, mesa.MozoId, mesa.QR, mesa.Estado, estado.Nombre, mesa.PosicionX, mesa.PosicionY)).OrderBy(h => h.Nombre)
                 .ToList();
 
 
-            return new Response<List<MesaDTOGet>>(rta,200);           
+            return new Response<List<MesaDTOBase>>(rta,200);           
         }
 
         public async Task<Response<(string,int)>> LlamarMozo(int idMesa)
@@ -82,6 +82,51 @@ namespace TipMeBackend.Data.MesaRepository
             mesa.Estado = estado;
 
             return await _context.SaveChangesAsync();
+        }
+
+        public async Task<Response<string>> ActualizarMesa(Mesa mesa, string nombreEstado)
+        {
+            Mesa mesaDB = await _context.Mesa.AsQueryable().Where(e => e.Id == mesa.Id).FirstOrDefaultAsync();
+
+            if (mesaDB != null)
+            {
+                EstadoMesa estado = await _context.Estado.AsQueryable().Where(e => e.Nombre == nombreEstado).FirstOrDefaultAsync();
+
+                mesaDB.QR = mesa.QR;
+                mesaDB.Numero = mesa.Numero;
+                mesaDB.Estado = estado.Id;
+                mesaDB.PosicionX = mesa.PosicionX;
+                mesaDB.PosicionY = mesa.PosicionY;
+                mesaDB.Nombre = mesa.Nombre;
+
+                _context.Mesa.Update(mesaDB);
+
+                int respuesta = await _context.SaveChangesAsync();
+
+                return new Response<string>(respuesta > 0 ? "Actualización realizada con éxito" : "Ha ocurrido un error al realizar la actualización.", respuesta > 0 ? 200 : 400);
+            }
+            else
+            {
+                return new Response<string>("Mesa inexistente", 404);
+            }
+        }
+
+        public async Task<Response<string>> BorrarMesa(int idMesa)
+        {
+            Mesa mesaDB = await _context.Mesa.AsQueryable().Where(e => e.Id == idMesa).FirstOrDefaultAsync();
+
+            if(mesaDB != null)
+            {
+                _context.Mesa.Remove(mesaDB);
+
+                int respuesta = await _context.SaveChangesAsync();
+
+                return new Response<string>(respuesta > 0 ? "Mesa eliminada con éxito" : "Ha ocurrido un error al eliminar la mesa.", respuesta > 0 ? 200 : 400);
+            }
+            else
+            {
+                return new Response<string>("Mesa inexistente", 404);
+            }
         }
     }
 }

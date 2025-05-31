@@ -22,7 +22,7 @@ namespace TipMeBackend.Controllers
         [HttpGet("historico/{idMozo}")]
         public async Task<IActionResult> getMesas(int idMozo)
         {
-            Response<List<MesaDTOGet>> mesas = await _mesaService.ObtenerMesas(idMozo);
+            Response<List<MesaDTOBase>> mesas = await _mesaService.ObtenerMesas(idMozo);
 
             if (mesas.StatusCode == 200) return Ok(mesas);
             else
@@ -74,6 +74,30 @@ namespace TipMeBackend.Controllers
             {
                 return Ok(rta);
             }
+            else
+            {
+                return BadRequest(rta);
+            }
+        }
+
+        [HttpPut("actualizar")]
+        public async Task<IActionResult> actualizarMesa([FromBody] MesaDTOBase mesa)
+        {
+            var rta = await _mesaService.ActualizarMesa(mesa);
+
+            if (rta.StatusCode == 200) return Ok(rta);
+            else
+            {
+                return BadRequest(rta);
+            }
+        }
+
+        [HttpDelete("borrar")]
+        public async Task<IActionResult> borrarMesa([FromBody] int id)
+        {
+            var rta = await _mesaService.BorrarMesa(id);
+
+            if (rta.StatusCode == 200) return Ok(rta);
             else
             {
                 return BadRequest(rta);

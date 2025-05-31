@@ -9,5 +9,7 @@ namespace TipMeBackend.Controllers.DTOs
         public int MozoId { get; set; }
         public string QR { get; set; }
         public int Estado { get; set; }
+        public decimal PosicionX { get; set; }
+        public decimal PosicionY { get; set; }
     }
 }

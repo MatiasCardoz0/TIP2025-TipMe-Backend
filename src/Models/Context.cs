@@ -24,7 +24,9 @@ namespace TipMeBackend.Models
             modelBuilder.Entity<Mesa>().Property(m => m.Numero).HasColumnName("MESA_NUMERO");
             modelBuilder.Entity<Mesa>().Property(m => m.MozoId).HasColumnName("MESA_MOZO");
             modelBuilder.Entity<Mesa>().Property(m => m.QR).HasColumnName("MESA_QR");
-            modelBuilder.Entity<Mesa>().Property(m => m.Estado).HasColumnName("MESA_ESTADO");            
+            modelBuilder.Entity<Mesa>().Property(m => m.Estado).HasColumnName("MESA_ESTADO");
+            modelBuilder.Entity<Mesa>().Property(m => m.PosicionX).HasColumnName("MESA_POSICION_X");
+            modelBuilder.Entity<Mesa>().Property(m => m.PosicionY).HasColumnName("MESA_POSICION_Y");
 
             modelBuilder.Entity<Propina>().Property(m => m.Id).HasColumnName("PROP_ID");
             modelBuilder.Entity<Propina>().Property(m => m.Monto).HasColumnName("PROP_MONTO");

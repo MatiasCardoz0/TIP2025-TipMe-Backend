@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "8xTzNSQxwgKYSmys1Ih+AFhjCL/tzhLjwFuc4JScjbw=",
+  "Hash": "nb3kNCxMct0Ca4P4j5buYTA51SZSW+ZXOcimiy0pr8g=",
   "Source": "TipMeBackend",
   "BasePath": "_content/TipMeBackend",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

@@ -16,10 +16,14 @@ namespace TipMeBackend.Models
         public string QR {  get; set; }
         [Column("MESA_ESTADO")]
         public int Estado { get; set; }
+        [Column("MESA_POSICION_X")]
+        public decimal PosicionX { get; set; }
+        [Column("MESA_POSICION_Y")]
+        public decimal PosicionY { get; set; }
 
         public Mesa() { }
 
-        public Mesa (int id, string nombre, int numero, int mozoId, string qR, int estado)
+        public Mesa (int id, string nombre, int numero, int mozoId, string qR, int estado, decimal posicionX, decimal posicionY)
         {
             Id = id;
             Nombre = nombre;
@@ -27,6 +31,8 @@ namespace TipMeBackend.Models
             MozoId = mozoId;
             QR = qR;
             Estado = estado;
+            PosicionX = posicionX;
+            PosicionY = posicionY;
         }
     }
 }

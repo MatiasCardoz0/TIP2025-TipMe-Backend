@@ -22,7 +22,9 @@ namespace TipMeBackend.Services.MesaService
                 Numero = mesaDto.Numero,
                 MozoId = mesaDto.MozoId,
                 QR = mesaDto.QR,
-                Estado = mesaDto.Estado
+                Estado = mesaDto.Estado,
+                PosicionX = mesaDto.PosicionX,
+                PosicionY = mesaDto.PosicionY,
             };
 
             if (String.IsNullOrEmpty(nuevaMesa.Nombre)) 
@@ -49,7 +51,7 @@ namespace TipMeBackend.Services.MesaService
             
         }
 
-        public async Task<Response<List<MesaDTOGet>>> ObtenerMesas(int idMozo)
+        public async Task<Response<List<MesaDTOBase>>> ObtenerMesas(int idMozo)
         {
             return await _mesaRepository.ObtenerMesas(idMozo);
         }
@@ -62,6 +64,28 @@ namespace TipMeBackend.Services.MesaService
         public async Task<Response<(string, int)>> PedirCuenta(int idMesa)
         {
             return await _mesaRepository.PedirCuenta(idMesa);
+        }
+
+        public async Task<Response<string>> BorrarMesa(int idMesa)
+        {
+            return await _mesaRepository.BorrarMesa(idMesa);
+        }
+
+        public async Task<Response<string>> ActualizarMesa(MesaDTOBase mesaDto)
+        {
+            Mesa mesaAct = new Mesa
+            {
+                Id = mesaDto.Id,
+                Nombre = mesaDto.Nombre,
+                Numero = mesaDto.Numero,
+                MozoId = mesaDto.MozoId,
+                QR = mesaDto.QR,
+                Estado = mesaDto.Estado,
+                PosicionX = mesaDto.PosicionX,
+                PosicionY = mesaDto.PosicionY,
+            };
+
+            return await _mesaRepository.ActualizarMesa(mesaAct, mesaDto.NombreEstado);
         }
     }
 }
