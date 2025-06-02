@@ -11,6 +11,7 @@ using TipMeBackend.Services.MesaService;
 using TipMeBackend.Services.PropinaService;
 using TipMeBackend.Services.UsuarioService;
 using TipMeBackend.Services;
+using TipMeBackend.Services.MPService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -39,6 +40,7 @@ builder.Services.AddScoped<IPropinaService, PropinaService>();
 builder.Services.AddScoped<IPropinaRepository, PropinaRepository>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IUsuarioService, UserService>();
+builder.Services.AddScoped<IMPService, MPService>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

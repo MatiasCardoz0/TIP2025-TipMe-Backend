@@ -77,7 +77,7 @@
   {
     "ContainingType": "TipMeBackend.Controllers.MesaController",
     "Method": "borrarMesa",
-    "RelativePath": "api/mesa/borrar",
+    "RelativePath": "api/mesa/borrar/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -175,6 +175,22 @@
       {
         "Name": "mozoDto",
         "Type": "Mozo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TipMeBackend.Controllers.MPController",
+    "Method": "getPreferenceId",
+    "RelativePath": "api/mp/grabar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "propinaDTO",
+        "Type": "TipMeBackend.Controllers.DTOs.PropinaDTO",
         "IsRequired": true
       }
     ],
