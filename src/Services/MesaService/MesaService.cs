@@ -23,8 +23,8 @@ namespace TipMeBackend.Services.MesaService
                 MozoId = mesaDto.MozoId,
                 QR = mesaDto.QR,
                 Estado = mesaDto.Estado,
-                PosicionX = mesaDto.PosicionX,
-                PosicionY = mesaDto.PosicionY,
+                PosicionX = 200,//mesaDto.PosicionX,
+                PosicionY = 200,//mesaDto.PosicionY,
             };
 
             if (String.IsNullOrEmpty(nuevaMesa.Nombre)) 

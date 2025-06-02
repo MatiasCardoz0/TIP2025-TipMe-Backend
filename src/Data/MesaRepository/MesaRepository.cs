@@ -26,7 +26,7 @@ namespace TipMeBackend.Data.MesaRepository
             var estados = await _context.Estado.ToListAsync();
            
             var mesas = await _context.Mesa.Where(h => h.MozoId == idMozo)
-                .OrderBy(h => h.Nombre)
+                .OrderBy(h => h.Id)
                 .ToListAsync();
 
 
@@ -34,7 +34,7 @@ namespace TipMeBackend.Data.MesaRepository
                 mesa => mesa.Estado,
                 estado => estado.Id,
                 (mesa, estado) => new MesaDTOBase(mesa.Id, mesa.Nombre, mesa.Numero, mesa.MozoId, mesa.QR, mesa.Estado, estado.Nombre, mesa.PosicionX, mesa.PosicionY)).OrderBy(h => h.Nombre)
-                .ToList();
+                 .OrderBy(h => h.Id).ToList();
 
 
             return new Response<List<MesaDTOBase>>(rta,200);           

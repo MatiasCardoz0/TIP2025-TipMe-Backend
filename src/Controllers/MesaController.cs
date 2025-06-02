@@ -92,8 +92,8 @@ namespace TipMeBackend.Controllers
             }
         }
 
-        [HttpDelete("borrar")]
-        public async Task<IActionResult> borrarMesa([FromBody] int id)
+        [HttpDelete("borrar/{id}")]
+        public async Task<IActionResult> borrarMesa(int id)
         {
             var rta = await _mesaService.BorrarMesa(id);
 
