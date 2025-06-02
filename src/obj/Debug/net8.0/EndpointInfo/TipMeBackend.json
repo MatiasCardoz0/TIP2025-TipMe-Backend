@@ -212,29 +212,49 @@
         }
       }
     },
-    "/api/mesa/borrar": {
+    "/api/mesa/borrar/{id}": {
       "delete": {
         "tags": [
           "Mesa"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/mp/grabar": {
+      "get": {
+        "tags": [
+          "MP"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "type": "integer",
-                "format": "int32"
+                "$ref": "#/components/schemas/PropinaDTO"
               }
             },
             "text/json": {
               "schema": {
-                "type": "integer",
-                "format": "int32"
+                "$ref": "#/components/schemas/PropinaDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "type": "integer",
-                "format": "int32"
+                "$ref": "#/components/schemas/PropinaDTO"
               }
             }
           }

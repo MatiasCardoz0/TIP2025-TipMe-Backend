@@ -1,6 +1,4 @@
-﻿using System.Security.Cryptography;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Mvc;
 using TipMeBackend.Controllers.DTOs;
 using TipMeBackend.Middlewares;
 using TipMeBackend.Models;
