@@ -10,7 +10,7 @@ namespace TipMeBackend.Services.MPService
 
         public MPService(Context context) { }
 
-        public async Task<Response<string>> GetPreferenceId(PropinaDTO propinaDTO)
+        public async Task<Response<PreferenceID>> GetPreferenceId(decimal monto)
         {
             try
             {
@@ -20,15 +20,22 @@ namespace TipMeBackend.Services.MPService
                 var request = new PreferenceRequest
                 {
                     Items = new List<PreferenceItemRequest>
-                {
-                    new PreferenceItemRequest
                     {
-                        Title = "Propina",
-                        Quantity = 1,
-                        CurrencyId = "ARS",
-                        UnitPrice = propinaDTO.Monto,
+                        new PreferenceItemRequest
+                        {
+                            Title = "Propina",
+                            Quantity = 1,
+                            CurrencyId = "ARS",
+                            UnitPrice = monto,
+                        },
                     },
-                },
+                    BackUrls = new PreferenceBackUrlsRequest
+                    {
+                        Success = "https://google.com.ar",
+                        Failure = "http://google.com.ar",
+                        Pending = "http://google.com.ar",
+                    },
+                    AutoReturn = "approved",
                 };
 
                 // Crea la preferencia usando el client
@@ -37,16 +44,17 @@ namespace TipMeBackend.Services.MPService
 
                 if (preference != null)
                 {
-                    return new Response<string>(id,200);
+                    id = preference.Id;
+                    return new Response<PreferenceID>(new PreferenceID(id),200);
                 }
                 else
                 {
-                    return new Response<string>("Ha ocurrido un error al generar la preferencia.", 404);
+                    return new Response<PreferenceID>("Ha ocurrido un error al generar la preferencia.", 404);
                 }
             }
             catch(Exception ex)
             {
-                return new Response<string>($"Error: {ex.Message}", 400);
+                return new Response<PreferenceID>($"Error: {ex.Message}", 400);
             }
         }
     }

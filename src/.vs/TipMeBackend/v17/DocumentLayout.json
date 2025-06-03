@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\controllers\\mpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:controllers\\mpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\controllers\\propinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:controllers\\propinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\services\\mesaservice\\mesaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:services\\mesaservice\\mesaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\controllers\\mpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:controllers\\mpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\services\\mpservice\\mpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:services\\mpservice\\mpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\services\\mpservice\\impservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:services\\mpservice\\impservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\controllers\\propinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:controllers\\propinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,45 +34,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "IMPService.cs",
+              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\MPService\\IMPService.cs",
+              "RelativeDocumentMoniker": "Services\\MPService\\IMPService.cs",
+              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\MPService\\IMPService.cs",
+              "RelativeToolTip": "Services\\MPService\\IMPService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T10:50:08.424Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MPService.cs",
+              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\MPService\\MPService.cs",
+              "RelativeDocumentMoniker": "Services\\MPService\\MPService.cs",
+              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\MPService\\MPService.cs",
+              "RelativeToolTip": "Services\\MPService\\MPService.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAIAwwBsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T10:45:54.05Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PropinaController.cs",
               "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\PropinaController.cs",
               "RelativeDocumentMoniker": "Controllers\\PropinaController.cs",
               "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\PropinaController.cs",
               "RelativeToolTip": "Controllers\\PropinaController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-02T11:02:31.984Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MPController.cs",
               "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\MPController.cs",
               "RelativeDocumentMoniker": "Controllers\\MPController.cs",
               "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\MPController.cs",
               "RelativeToolTip": "Controllers\\MPController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBcAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-02T10:40:24.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MesaService.cs",
-              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\MesaService\\MesaService.cs",
-              "RelativeDocumentMoniker": "Services\\MesaService\\MesaService.cs",
-              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\MesaService\\MesaService.cs",
-              "RelativeToolTip": "Services\\MesaService\\MesaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAABmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:48:53.79Z",
               "EditorCaption": ""
             },
             {
@@ -86,13 +103,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAACoAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGYAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T02:54:36.926Z",
               "EditorCaption": ""
