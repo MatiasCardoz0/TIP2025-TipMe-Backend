@@ -183,14 +183,14 @@
   {
     "ContainingType": "TipMeBackend.Controllers.MPController",
     "Method": "getPreferenceId",
-    "RelativePath": "api/mp/grabar",
+    "RelativePath": "api/mp/preferenceId/{monto}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "propinaDTO",
-        "Type": "TipMeBackend.Controllers.DTOs.PropinaDTO",
+        "Name": "monto",
+        "Type": "System.Decimal",
         "IsRequired": true
       }
     ],

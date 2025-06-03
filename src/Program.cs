@@ -12,6 +12,7 @@ using TipMeBackend.Services.PropinaService;
 using TipMeBackend.Services.UsuarioService;
 using TipMeBackend.Services;
 using TipMeBackend.Services.MPService;
+using MercadoPago.Config;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -98,5 +99,7 @@ app.UseCors("AllowAll");
 
 app.MapControllers();
 
+// Credenciales de MP
+MercadoPagoConfig.AccessToken = "Access token a cambiar";
 
 app.Run();

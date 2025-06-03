@@ -235,30 +235,22 @@
         }
       }
     },
-    "/api/mp/grabar": {
+    "/api/mp/preferenceId/{monto}": {
       "get": {
         "tags": [
           "MP"
         ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PropinaDTO"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/PropinaDTO"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/PropinaDTO"
-              }
+        "parameters": [
+          {
+            "name": "monto",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
             }
           }
-        },
+        ],
         "responses": {
           "200": {
             "description": "OK"

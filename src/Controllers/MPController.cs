@@ -15,10 +15,10 @@ namespace TipMeBackend.Controllers
             _mpService = mpService;
         }
 
-        [HttpGet("grabar")]
-        public async Task<IActionResult> getPreferenceId([FromBody] PropinaDTO propinaDTO)
+        [HttpGet("preferenceId/{monto}")]
+        public async Task<IActionResult> getPreferenceId(decimal monto)
         {          
-            var rta = await _mpService.GetPreferenceId(propinaDTO);
+            var rta = await _mpService.GetPreferenceId(monto);
 
             if (rta.StatusCode == 200)
             {

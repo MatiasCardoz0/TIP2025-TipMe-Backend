@@ -6,6 +6,6 @@ namespace TipMeBackend.Services.MPService
 {
     public interface IMPService
     {
-        Task<Response<string>> GetPreferenceId(PropinaDTO propinaDTO);
+        Task<Response<PreferenceID>> GetPreferenceId(decimal monto);
     }
 }
