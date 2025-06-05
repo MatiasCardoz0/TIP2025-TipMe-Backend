@@ -32,7 +32,7 @@ namespace TipMeBackend.Tests.RepositoryTests
             var result = await _mesaService!.GrabarMesa(mesaDTO);
 
             Assert.That(result.StatusCode, Is.EqualTo(200));
-            Assert.That(result.Data, Is.EqualTo("ok"));
+            Assert.That(result.Message, Is.EqualTo("ok"));
         }
 
         [Test]
