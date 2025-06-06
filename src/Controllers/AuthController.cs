@@ -18,26 +18,17 @@ namespace TipMeBackend.Controllers
             _usuarioService = usuarioService;
         }
 
-    [HttpPost("login")]
-    public async Task<IActionResult> Login([FromBody] AuthDTO dto)
-    {
-        var response = await _usuarioService.ObtenerAuthData(dto.Email);
-        if (response.Data == null)
-            return Unauthorized(new { message = "Credenciales inválidas" });
-
-        if (response.Data.Password != dto.Password)
-            return Unauthorized(new { message = "Credenciales inválidas" });
-
-        // Genera el token JWT
-        var token = _jwtService.GenerateToken(response.Data.Email.ToString());
-        return Ok(new { token });
-    }
-
-        [HttpPost("register")]
-        public IActionResult Registrar([FromBody] AuthDTO dto)
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] AuthDTO dto)
         {
-            // implementacion  de registro agregando el user a laa db, etc
-            return null;
+            var response = await _usuarioService.ObtenerAuthData(dto.Email);
+            if (response.Data == null || response.Data.Password != dto.Password){
+                    return Unauthorized(new { message = "Credenciales inválidas" });
+                };
+
+            // Genera el token JWT
+            var token = _jwtService.GenerateToken(response.Data.Email.ToString());
+            return Ok(new { token });
         }
     }
 
