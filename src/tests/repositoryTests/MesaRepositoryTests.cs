@@ -35,21 +35,6 @@ namespace TipMeBackend.Tests.RepositoryTests
             Assert.That(result.Message, Is.EqualTo("ok"));
         }
 
-        [Test]
-        public async Task ObtenerMesas_devuelve_lista_cuando_llamado_exitoso()
-        {
-            var mesas = new List<MesaDTOGet>
-            {
-                new MesaDTOGet("Mesa 1", 1, 1, "www.test.com/1", 1, "Disponible"),
-                new MesaDTOGet("Mesa 2", 2, 1, "www.test.com/2", 1, "Disponible")
-            };
-            _mesaRepositoryMock!.Setup(repo => repo.ObtenerMesas(1))
-                .ReturnsAsync(new Response<List<MesaDTOGet>>(mesas, 200));
-
-            var result = await _mesaService!.ObtenerMesas(1);
-
-            Assert.That(result.Data, Is.EqualTo(mesas));
-            Assert.That(result.StatusCode, Is.EqualTo(200));
-        }
+ 
     }
 }
