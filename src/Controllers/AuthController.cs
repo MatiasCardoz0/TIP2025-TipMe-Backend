@@ -28,7 +28,7 @@ namespace TipMeBackend.Controllers
 
             // Genera el token JWT
             var token = _jwtService.GenerateToken(response.Data.Email.ToString());
-            return Ok(new { token });
+            return Ok(new { token, id = response.Data.Id });
         }
     }
 
