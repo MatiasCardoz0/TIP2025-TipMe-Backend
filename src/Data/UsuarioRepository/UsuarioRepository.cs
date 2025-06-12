@@ -40,7 +40,7 @@ namespace TipMeBackend.Data.UsuarioRepository
                 {
                     return new Response<AuthDTO>("Usuario no encontrado", 404);
                 }
-                return new Response<AuthDTO>(new AuthDTO { Email = user.Email, Password = user.Password }, 200);
+                return new Response<AuthDTO>(new AuthDTO { Email = user.Email, Password = user.Password, Id = user.Id }, 200);
             }
             catch (Exception ex)
             {
