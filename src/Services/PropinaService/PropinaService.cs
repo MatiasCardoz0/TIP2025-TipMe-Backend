@@ -18,7 +18,7 @@ namespace TipMeBackend.Services.PropinaService
                 Monto = propinaDTO.Monto,
                 Fecha = propinaDTO.Fecha,
                 IdMesa = propinaDTO.IdMesa,
-                IdMozo = propinaDTO.IdMozo
+                //IdMozo = propinaDTO.IdMozo
             };
 
             return await _propinaRepository.GrabarPropina(nuevaPropina);

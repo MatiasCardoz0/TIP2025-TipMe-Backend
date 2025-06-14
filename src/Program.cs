@@ -26,7 +26,7 @@ builder.Services.AddCors(options =>
     {
         options.AddPolicy("AllowAll", policy =>
         {
-            policy.AllowAnyOrigin()
+            policy.WithOrigins("*")
                   .AllowAnyMethod()
                   .AllowAnyHeader();
         });
@@ -100,6 +100,6 @@ app.UseCors("AllowAll");
 app.MapControllers();
 
 // Credenciales de MP
-MercadoPagoConfig.AccessToken = "Access token a cambiar";
+MercadoPagoConfig.AccessToken = "APP_USR-1269109194936586-060407-217169f10613be627131382006dffe6b-2475008816";
 
 app.Run();

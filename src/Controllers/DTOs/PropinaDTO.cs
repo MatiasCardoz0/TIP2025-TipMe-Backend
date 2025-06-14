@@ -7,6 +7,6 @@ namespace TipMeBackend.Controllers.DTOs
         public decimal Monto { get; set; }
         public DateTime Fecha { get; set; }
         public int IdMesa { get; set; }
-        public int IdMozo { get; set; }
+        //public int IdMozo { get; set; }
     }
 }
