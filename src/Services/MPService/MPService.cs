@@ -31,9 +31,9 @@ namespace TipMeBackend.Services.MPService
                     },
                     BackUrls = new PreferenceBackUrlsRequest
                     {
-                        Success = "https://google.com.ar",
-                        Failure = "http://google.com.ar",
-                        Pending = "http://google.com.ar",
+                        Success = "https://03f4-186-57-136-121.ngrok-free.app/home",
+                        Failure = "https://03f4-186-57-136-121.ngrok-free.app/home",
+                        Pending = "https://03f4-186-57-136-121.ngrok-free.app/home",
                     },
                     AutoReturn = "approved",
                 };

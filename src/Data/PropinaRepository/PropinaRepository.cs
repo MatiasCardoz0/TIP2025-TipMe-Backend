@@ -15,6 +15,15 @@ namespace TipMeBackend.Data.PropinaRepository
 
         public async Task<Response<string>> GrabarPropina(Propina propina)
         {
+            var mozo = await _context.Mesa.Where(m => m.Id == propina.Id).FirstOrDefaultAsync();
+
+            if(mozo == null)
+            {
+                return new Response<string>( "No existe el mozo para la mesa especificada.", 500);
+            }
+
+            propina.IdMozo = mozo.Id;
+
             _context.Add(propina);
             int result = await _context.SaveChangesAsync();
             return new Response<string>(result > 0? "Registro realizado con éxito" : "Ha ocurrido un error al grabar", result > 0? 200 : 400);           
