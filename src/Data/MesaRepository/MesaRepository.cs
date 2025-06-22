@@ -40,35 +40,35 @@ namespace TipMeBackend.Data.MesaRepository
             return new Response<List<MesaDTOBase>>(rta,200);           
         }
 
-        public async Task<Response<(string,int)>> LlamarMozo(int idMesa)
+        public async Task<Response<(string, int, int)>> LlamarMozo(int idMesa)
         {
             var mesa = await _context.Mesa.FirstOrDefaultAsync(h => h.Id == idMesa);
             if (mesa == null)
             {
-                return new Response<(string, int)>(("No se encontró la mesa",0), 404);
+                return new Response<(string,int, int)>(("No se encontró la mesa", 0, 0), 404);
             }
 
             int respuesta = await CambiarEstadoMesa(idMesa, 4); // "Llamar Mozo"
         
             var mensaje = respuesta > 0 ? "Llamado de mozo registrado con éxito" : "Ha ocurrido un error al registrar el llamado de mozo.";
 
-            return new Response<(string, int)>((mensaje, mesa.Numero), 200);
+            return new Response<(string, int, int)>((mensaje, mesa.Numero, mesa.MozoId), 200);
 
         }
 
-        public async Task<Response<(string,int)>> PedirCuenta(int idMesa)
+        public async Task<Response<(string, int, int)>> PedirCuenta(int idMesa)
         {
             var mesa = await _context.Mesa.FirstOrDefaultAsync(h => h.Id == idMesa);
             if (mesa == null)
             {
-                return new Response<(string, int)>(("No se encontró la mesa",0), 404);
+                return new Response<(string,int, int)>(("No se encontró la mesa", 0,0), 404);
             }
          
             int respuesta = await CambiarEstadoMesa(idMesa, 8); // "Pedir Cuenta"
 
             var mensaje = respuesta > 0 ? "Pedido de cuenta registrado con éxito" : "Ha ocurrido un error al registrar el pedido de cuenta.";
 
-            return new Response<(string, int)>((mensaje, mesa.Numero), 200);
+            return new Response<(string, int, int)>((mensaje, mesa.Numero, mesa.MozoId), 200);
         }
 
 

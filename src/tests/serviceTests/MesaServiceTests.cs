@@ -16,7 +16,7 @@ namespace TipMeBackend.Tests.ServiceTests
         {
             var mesaRepoMock = new Mock<IMesaRepository>();
             mesaRepoMock.Setup(r => r.LlamarMozo(It.IsAny<int>()))
-                .ReturnsAsync(new Response<(string, int)>("No se encontró la mesa", 404));
+                .ReturnsAsync(new Response<(string, int, int)>("No se encontró la mesa", 404));
             var service = new MesaService(mesaRepoMock.Object);
 
             var result = await service.LlamarMozo(999);

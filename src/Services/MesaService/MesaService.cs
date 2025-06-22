@@ -1,4 +1,4 @@
-﻿using TipMeBackend.Controllers.DTOs;
+﻿   using TipMeBackend.Controllers.DTOs;
 using TipMeBackend.Data.MesaRepository;
 using TipMeBackend.Models;
 
@@ -56,12 +56,12 @@ namespace TipMeBackend.Services.MesaService
             return await _mesaRepository.ObtenerMesas(idMozo);
         }
 
-        public async Task<Response<(string, int)>> LlamarMozo(int idMesa)
+        public async Task<Response<(string,int, int)>> LlamarMozo(int idMesa)
         {
             return await _mesaRepository.LlamarMozo(idMesa);
         }
 
-        public async Task<Response<(string, int)>> PedirCuenta(int idMesa)
+        public async Task<Response<(string, int, int)>> PedirCuenta(int idMesa)
         {
             return await _mesaRepository.PedirCuenta(idMesa);
         }

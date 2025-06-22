@@ -3,6 +3,7 @@ using TipMeBackend.Controllers.DTOs;
 using TipMeBackend.Middlewares;
 using TipMeBackend.Models;
 using TipMeBackend.Services.MesaService;
+using System.Text.Json;
 
 namespace TipMeBackend.Controllers
 {
@@ -43,12 +44,25 @@ namespace TipMeBackend.Controllers
 
         //endpoint para recibir el llamado del mozo desde el cliente
         [HttpPost("llamarMozo")]
-        public async Task<IActionResult> recibirLlamado(int idMesa, int idMozo)
+        public async Task<IActionResult> recibirLlamado(int idMesa, [FromBody] LlamadoMozoDTO body)
         {
-            var rta = await _mesaService.LlamarMozo(idMesa);
 
-            string message = $"Llamado de la mesa {rta.Data.Item2}";
-            await WebSocketHandler.SendMessageToMozoAsync(idMozo, message);
+                var rta = await _mesaService.LlamarMozo(idMesa);
+            try {
+                string message = $"Llamado de la mesa {rta.Data.Item2}";
+                await WebSocketHandler.SendMessageToMozoAsync(rta.Data.Item3, message);
+
+                if (!string.IsNullOrWhiteSpace(body?.Nota))
+                {
+                var notaPayload = new { nota = body.Nota, mesa = rta.Data.Item2 };
+                string json = JsonSerializer.Serialize(notaPayload);
+                await WebSocketHandler.SendMessageToMozoAsync(rta.Data.Item3, json);
+                }
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Error al enviar el mensaje al mozo: {ex.Message}");
+            }
 
             if (rta.StatusCode == 200)
             {
@@ -61,12 +75,12 @@ namespace TipMeBackend.Controllers
         }
 
         [HttpPost("pedirCuenta")]
-        public async Task<IActionResult> pedirCuenta(int idMesa, int idMozo)
+        public async Task<IActionResult> pedirCuenta(int idMesa)
         {
             var rta = await _mesaService.PedirCuenta(idMesa);
 
             string message = $"Pedido de cuenta de la mesa {rta.Data.Item2}";
-            await WebSocketHandler.SendMessageToMozoAsync(idMozo, message);
+            await WebSocketHandler.SendMessageToMozoAsync(rta.Data.Item3, message);
 
             if (rta.StatusCode == 200)
             {
