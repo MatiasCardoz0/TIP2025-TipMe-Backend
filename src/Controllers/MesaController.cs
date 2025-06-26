@@ -48,21 +48,14 @@ namespace TipMeBackend.Controllers
         {
 
                 var rta = await _mesaService.LlamarMozo(idMesa);
-            try {
-                string message = $"Llamado de la mesa {rta.Data.Item2}";
-                await WebSocketHandler.SendMessageToMozoAsync(rta.Data.Item3, message);
 
+                string message = $"Llamado de la mesa {rta.Data.Item2}";
                 if (!string.IsNullOrWhiteSpace(body?.Nota))
                 {
-                var notaPayload = new { nota = body.Nota, mesa = rta.Data.Item2 };
-                string json = JsonSerializer.Serialize(notaPayload);
-                await WebSocketHandler.SendMessageToMozoAsync(rta.Data.Item3, json);
+                    message += $": {body.Nota}";
                 }
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Error al enviar el mensaje al mozo: {ex.Message}");
-            }
+                var notaPayload = new { nota = body.Nota, mesa = rta.Data.Item2 };
+                await WebSocketHandler.SendMessageToMozoAsync(rta.Data.Item3, message);
 
             if (rta.StatusCode == 200)
             {
