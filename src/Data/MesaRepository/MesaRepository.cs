@@ -18,7 +18,18 @@ namespace TipMeBackend.Data.MesaRepository
             await _context.Mesa.AddAsync(mesa);
             int respuesta = await _context.SaveChangesAsync();
 
-            return new Response<string>(respuesta > 0 ? "Registro realizado con éxito" : "Ha ocurrido un error al realizar el registro.", respuesta > 0 ? 200 : 400);
+            if (respuesta > 0 && mesa.QR != null && mesa.QR != string.Empty)
+            {
+                // se asigna el QR a la mesa
+                mesa.QR = $"{mesa.QR}/{mesa.Id}";
+                _context.Mesa.Update(mesa);
+                respuesta = await _context.SaveChangesAsync();
+            } else
+            {
+                _context.Mesa.Remove(mesa);
+                return new Response<string>("hubo un error al realizar el registro", 400);
+            }
+            return new Response<string>(respuesta > 0 ? "Registro realizado con exito" : "Ha ocurrido un error al realizar el registro de mesa", respuesta > 0 ? 200 : 400);
         }
 
         public async Task<Response<List<MesaDTOBase>>> ObtenerMesas(int idMozo)

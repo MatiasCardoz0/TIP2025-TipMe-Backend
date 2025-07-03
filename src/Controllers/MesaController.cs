@@ -3,7 +3,6 @@ using TipMeBackend.Controllers.DTOs;
 using TipMeBackend.Middlewares;
 using TipMeBackend.Models;
 using TipMeBackend.Services.MesaService;
-using System.Text.Json;
 
 namespace TipMeBackend.Controllers
 {
@@ -46,7 +45,6 @@ namespace TipMeBackend.Controllers
         [HttpPost("llamarMozo")]
         public async Task<IActionResult> recibirLlamado(int idMesa, [FromBody] LlamadoMozoDTO body)
         {
-
                 var rta = await _mesaService.LlamarMozo(idMesa);
 
                 string message = $"Llamado de la mesa {rta.Data.Item2}";

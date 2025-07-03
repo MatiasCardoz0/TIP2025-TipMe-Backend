@@ -42,11 +42,6 @@ namespace TipMeBackend.Services.MesaService
                 return new Response<string>("El numero de mesa debe ser mayos a 0.", 400);
             }
 
-            if (String.IsNullOrEmpty(nuevaMesa.QR))
-            {
-                return new Response<string>("El QR no puede ser vacio.", 400);
-            }
-
             return await _mesaRepository.GrabarMesa(nuevaMesa);
             
         }
