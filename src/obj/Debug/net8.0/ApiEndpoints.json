@@ -197,6 +197,91 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TipMeBackend.Controllers.NotaMesaController",
+    "Method": "getNotasDeMesa",
+    "RelativePath": "api/nota",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idMesa",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TipMeBackend.Controllers.NotaMesaController",
+    "Method": "actualizarNotaEnMesa",
+    "RelativePath": "api/nota/actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notaDTO",
+        "Type": "TipMeBackend.Controllers.DTOs.NotaMesaPutDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TipMeBackend.Controllers.NotaMesaController",
+    "Method": "borrarUnaNotaDeMesa",
+    "RelativePath": "api/nota/borrarNotas/{idMesa}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idMesa",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TipMeBackend.Controllers.NotaMesaController",
+    "Method": "borrarUnaNotaDeMesa",
+    "RelativePath": "api/nota/borrarUnaNota/{mesaId}/{renglon}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mesaId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "renglon",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TipMeBackend.Controllers.NotaMesaController",
+    "Method": "grabarNotaEnMesa",
+    "RelativePath": "api/nota/grabar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "notaDTO",
+        "Type": "TipMeBackend.Controllers.DTOs.NotaMesaPostDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TipMeBackend.Controllers.PropinaController",
     "Method": "getPropinas",
     "RelativePath": "api/propina/{idMozo}",

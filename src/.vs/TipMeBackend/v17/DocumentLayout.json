@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\controllers\\notamesacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:controllers\\notamesacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\controllers\\mpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:controllers\\mpcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\controllers\\propinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:controllers\\propinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\data\\notarepository\\notarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:data\\notarepository\\notarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\data\\propinarepository\\propinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:data\\propinarepository\\propinarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\services\\mpservice\\mpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:services\\mpservice\\mpservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\services\\mpservice\\impservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:services\\mpservice\\impservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\services\\notaservice\\notaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:services\\notaservice\\notaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\controllers\\propinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:controllers\\propinacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|c:\\users\\matias\\documents\\github\\tip2025-tipme-backend\\src\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C43DB5A1-D8D6-4457-A58F-09FB016A5220}|TipMeBackend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,85 +46,116 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IMPService.cs",
-              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\MPService\\IMPService.cs",
-              "RelativeDocumentMoniker": "Services\\MPService\\IMPService.cs",
-              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\MPService\\IMPService.cs",
-              "RelativeToolTip": "Services\\MPService\\IMPService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABEAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "PropinaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Data\\PropinaRepository\\PropinaRepository.cs",
+              "RelativeDocumentMoniker": "Data\\PropinaRepository\\PropinaRepository.cs",
+              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Data\\PropinaRepository\\PropinaRepository.cs",
+              "RelativeToolTip": "Data\\PropinaRepository\\PropinaRepository.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T10:50:08.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-01T23:05:48.474Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MPService.cs",
-              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\MPService\\MPService.cs",
-              "RelativeDocumentMoniker": "Services\\MPService\\MPService.cs",
-              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\MPService\\MPService.cs",
-              "RelativeToolTip": "Services\\MPService\\MPService.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAIAwwBsAAAAvAAAAAAAAAA==",
+              "Title": "NotaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Data\\NotaRepository\\NotaRepository.cs",
+              "RelativeDocumentMoniker": "Data\\NotaRepository\\NotaRepository.cs",
+              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Data\\NotaRepository\\NotaRepository.cs",
+              "RelativeToolTip": "Data\\NotaRepository\\NotaRepository.cs",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAcwFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T10:45:54.05Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T18:46:47.711Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "NotaService.cs",
+              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\NotaService\\NotaService.cs",
+              "RelativeDocumentMoniker": "Services\\NotaService\\NotaService.cs",
+              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\NotaService\\NotaService.cs",
+              "RelativeToolTip": "Services\\NotaService\\NotaService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA3wCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T18:46:28.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "PropinaController.cs",
               "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\PropinaController.cs",
               "RelativeDocumentMoniker": "Controllers\\PropinaController.cs",
               "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\PropinaController.cs",
               "RelativeToolTip": "Controllers\\PropinaController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB8AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T11:02:31.984Z",
+              "WhenOpened": "2025-06-20T02:11:36.177Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NotaMesaController.cs",
+              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\NotaMesaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NotaMesaController.cs",
+              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\NotaMesaController.cs",
+              "RelativeToolTip": "Controllers\\NotaMesaController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T02:11:05.658Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MPController.cs",
-              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\MPController.cs",
-              "RelativeDocumentMoniker": "Controllers\\MPController.cs",
-              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Controllers\\MPController.cs",
-              "RelativeToolTip": "Controllers\\MPController.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T10:40:24.167Z",
-              "EditorCaption": ""
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-14T00:40:47.699Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
+              "Title": "MPService.cs",
+              "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\MPService\\MPService.cs",
+              "RelativeDocumentMoniker": "Services\\MPService\\MPService.cs",
+              "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Services\\MPService\\MPService.cs",
+              "RelativeToolTip": "Services\\MPService\\MPService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA4wCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T10:45:54.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-28T23:33:41.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-28T23:33:41.853Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Matias\\Documents\\GitHub\\TIP2025-TipMe-Backend\\src\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAGYAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAcwGwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T02:54:36.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T02:54:36.926Z"
             }
           ]
         }

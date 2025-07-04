@@ -15,14 +15,14 @@ namespace TipMeBackend.Data.PropinaRepository
 
         public async Task<Response<string>> GrabarPropina(Propina propina)
         {
-            var mozo = await _context.Mesa.Where(m => m.Id == propina.Id).FirstOrDefaultAsync();
+            var mozo = await _context.Mesa.Where(m => m.Id == propina.IdMesa).FirstOrDefaultAsync();
 
-            if(mozo == null)
+            if (mozo == null)
             {
                 return new Response<string>( "No existe el mozo para la mesa especificada.", 500);
             }
 
-            propina.IdMozo = mozo.Id;
+            propina.IdMozo = mozo.MozoId;
 
             _context.Add(propina);
             int result = await _context.SaveChangesAsync();

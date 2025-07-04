@@ -11,6 +11,7 @@ namespace TipMeBackend.Models
         public DbSet<Propina> Propina { get; set; }
         public DbSet<EstadoMesa> Estado { get; set; }
         public DbSet<Mozo> Mozo { get; set; }
+        public DbSet<NotaMesa> Nota {  get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -18,6 +19,7 @@ namespace TipMeBackend.Models
             modelBuilder.Entity<Mesa>().ToTable("Mesa").HasKey(m => m.Id);
             modelBuilder.Entity<Propina>().ToTable("Propina").HasKey(m => m.Id);
             modelBuilder.Entity<EstadoMesa>().ToTable("Estado_Mesa").HasKey(m => m.Id);
+            modelBuilder.Entity<NotaMesa>().ToTable("Nota").HasKey(m => new { m.MesaId, m.MozoId, m.Renglon });
 
             modelBuilder.Entity<Mesa>().Property(m => m.Id).HasColumnName("MESA_ID");
             modelBuilder.Entity<Mesa>().Property(m => m.Nombre).HasColumnName("MESA_NOMBRE");
@@ -46,7 +48,10 @@ namespace TipMeBackend.Models
             modelBuilder.Entity<Mozo>().Property(m => m.CVU).HasColumnName("MOZO_CVU");
             modelBuilder.Entity<Mozo>().Property(m => m.Alias).HasColumnName("MOZO_ALIAS");
 
-
+            modelBuilder.Entity<NotaMesa>().Property(m => m.MesaId).HasColumnName("NOTA_MOZO_ID");
+            modelBuilder.Entity<NotaMesa>().Property(m => m.MozoId).HasColumnName("NOTA_MESA_ID");
+            modelBuilder.Entity<NotaMesa>().Property(m => m.Renglon).HasColumnName("NOTA_RENGLON");
+            modelBuilder.Entity<NotaMesa>().Property(m => m.Mensaje).HasColumnName("NOTA_MENSAJE");
         }
     }
 }
