@@ -18,7 +18,7 @@ namespace TipMeBackend.Tests.ControllerTests
         {
             var mesaService = new Mock<IMesaService>();
             mesaService.Setup(s => s.ObtenerMesas(1))
-                .ReturnsAsync(new Response<List<MesaDTOGet>>(new List<MesaDTOGet>(), 200));
+                .ReturnsAsync(new Response<List<MesaDTOBase>>(new List<MesaDTOBase>(), 200));
             var controller = new MesaController(mesaService.Object);
 
             var result = await controller.getMesas(1);
@@ -32,9 +32,10 @@ namespace TipMeBackend.Tests.ControllerTests
             var mesaServiceMock = new Mock<IMesaService>();
             // Se simula que la llamada al service devuelve error 404
             mesaServiceMock.Setup(s => s.LlamarMozo(It.IsAny<int>()))
-                .ReturnsAsync(new Response<(string, int)>("No se encontró la mesa", 404));
+                .ReturnsAsync(new Response<(string,int, int)>("No se encontró la mesa", 404));
             var controller = new MesaController(mesaServiceMock.Object);
-            var result = await controller.recibirLlamado(10000, 1);
+            var notaDTO = new LlamadoMozoDTO { Nota = "Quiero agregar abc al pedido" };
+            var result = await controller.recibirLlamado(10000, notaDTO);
 
             ClassicAssert.IsInstanceOf<BadRequestObjectResult>(result);
         }
@@ -57,10 +58,10 @@ namespace TipMeBackend.Tests.ControllerTests
         {
             var mesaService = new Mock<IMesaService>();
             mesaService.Setup(s => s.PedirCuenta(It.IsAny<int>()))
-                .ReturnsAsync(new Response<(string, int)>(message: "No se encontró la mesa", statusCode: 404));
+                .ReturnsAsync(new Response<(string, int, int)>(message: "No se encontró la mesa", statusCode: 404));
             var controller = new MesaController(mesaService.Object);
 
-            var result = await controller.pedirCuenta(123, 1);
+            var result = await controller.pedirCuenta(123);
 
             ClassicAssert.IsInstanceOf<BadRequestObjectResult>(result);
         }
@@ -70,10 +71,10 @@ namespace TipMeBackend.Tests.ControllerTests
         {
             var mesaService = new Mock<IMesaService>();
             mesaService.Setup(s => s.PedirCuenta(It.IsAny<int>()))
-                .ReturnsAsync(new Response<(string, int)>("Cuenta pedida con éxito", 200));
+                .ReturnsAsync(new Response<(string, int, int)>("Cuenta pedida con éxito", 200));
             var controller = new MesaController(mesaService.Object);
 
-            var result = await controller.pedirCuenta(1, 1);
+            var result = await controller.pedirCuenta(1);
 
             ClassicAssert.IsInstanceOf<OkObjectResult>(result);
         }

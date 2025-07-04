@@ -43,12 +43,17 @@ namespace TipMeBackend.Controllers
 
         //endpoint para recibir el llamado del mozo desde el cliente
         [HttpPost("llamarMozo")]
-        public async Task<IActionResult> recibirLlamado(int idMesa, int idMozo)
+        public async Task<IActionResult> recibirLlamado(int idMesa, [FromBody] LlamadoMozoDTO body)
         {
-            var rta = await _mesaService.LlamarMozo(idMesa);
+                var rta = await _mesaService.LlamarMozo(idMesa);
 
-            string message = $"Llamado de la mesa {rta.Data.Item2}";
-            await WebSocketHandler.SendMessageToMozoAsync(idMozo, message);
+                string message = $"Llamado de la mesa {rta.Data.Item2}";
+                if (!string.IsNullOrWhiteSpace(body?.Nota))
+                {
+                    message += $": {body.Nota}";
+                }
+                var notaPayload = new { nota = body.Nota, mesa = rta.Data.Item2 };
+                await WebSocketHandler.SendMessageToMozoAsync(rta.Data.Item3, message);
 
             if (rta.StatusCode == 200)
             {
@@ -61,12 +66,12 @@ namespace TipMeBackend.Controllers
         }
 
         [HttpPost("pedirCuenta")]
-        public async Task<IActionResult> pedirCuenta(int idMesa, int idMozo)
+        public async Task<IActionResult> pedirCuenta(int idMesa)
         {
             var rta = await _mesaService.PedirCuenta(idMesa);
 
             string message = $"Pedido de cuenta de la mesa {rta.Data.Item2}";
-            await WebSocketHandler.SendMessageToMozoAsync(idMozo, message);
+            await WebSocketHandler.SendMessageToMozoAsync(rta.Data.Item3, message);
 
             if (rta.StatusCode == 200)
             {

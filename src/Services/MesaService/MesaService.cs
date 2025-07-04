@@ -1,4 +1,4 @@
-﻿using TipMeBackend.Controllers.DTOs;
+﻿   using TipMeBackend.Controllers.DTOs;
 using TipMeBackend.Data.MesaRepository;
 using TipMeBackend.Models;
 
@@ -42,11 +42,6 @@ namespace TipMeBackend.Services.MesaService
                 return new Response<string>("El numero de mesa debe ser mayos a 0.", 400);
             }
 
-            if (String.IsNullOrEmpty(nuevaMesa.QR))
-            {
-                return new Response<string>("El QR no puede ser vacio.", 400);
-            }
-
             return await _mesaRepository.GrabarMesa(nuevaMesa);
             
         }
@@ -56,12 +51,12 @@ namespace TipMeBackend.Services.MesaService
             return await _mesaRepository.ObtenerMesas(idMozo);
         }
 
-        public async Task<Response<(string, int)>> LlamarMozo(int idMesa)
+        public async Task<Response<(string,int, int)>> LlamarMozo(int idMesa)
         {
             return await _mesaRepository.LlamarMozo(idMesa);
         }
 
-        public async Task<Response<(string, int)>> PedirCuenta(int idMesa)
+        public async Task<Response<(string, int, int)>> PedirCuenta(int idMesa)
         {
             return await _mesaRepository.PedirCuenta(idMesa);
         }
