@@ -13,6 +13,8 @@ using TipMeBackend.Services.UsuarioService;
 using TipMeBackend.Services;
 using TipMeBackend.Services.MPService;
 using MercadoPago.Config;
+using TipMeBackend.Services.NotaService;
+using TipMeBackend.Data.NotaRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -42,6 +44,8 @@ builder.Services.AddScoped<IPropinaRepository, PropinaRepository>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IUsuarioService, UserService>();
 builder.Services.AddScoped<IMPService, MPService>();
+builder.Services.AddScoped<INotaService, NotaService>();
+builder.Services.AddScoped<INotaRepository, NotaRepository>();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

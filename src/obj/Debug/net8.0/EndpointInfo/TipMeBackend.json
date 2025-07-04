@@ -258,6 +258,168 @@
         }
       }
     },
+    "/api/nota": {
+      "get": {
+        "tags": [
+          "NotaMesa"
+        ],
+        "parameters": [
+          {
+            "name": "idMesa",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/nota/grabar": {
+      "post": {
+        "tags": [
+          "NotaMesa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotaMesaPostDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotaMesaPostDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotaMesaPostDTO"
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/mp/preferenceId/{monto}": {
+      "get": {
+        "tags": [
+          "MP"
+        ],
+        "parameters": [
+          {
+            "name": "monto",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "number",
+              "format": "double"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/nota/actualizar": {
+      "put": {
+        "tags": [
+          "NotaMesa"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotaMesaPutDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotaMesaPutDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotaMesaPutDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/nota/borrarUnaNota/{mesaId}/{renglon}": {
+      "delete": {
+        "tags": [
+          "NotaMesa"
+        ],
+        "parameters": [
+          {
+            "name": "mesaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "renglon",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/nota/borrarNotas/{idMesa}": {
+      "delete": {
+        "tags": [
+          "NotaMesa"
+        ],
+        "parameters": [
+          {
+            "name": "idMesa",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/propina/{idMozo}": {
       "get": {
         "tags": [
@@ -499,6 +661,38 @@
         },
         "additionalProperties": false
       },
+      "NotaMesaPostDTO": {
+        "type": "object",
+        "properties": {
+          "mesaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NotaMesaPutDTO": {
+        "type": "object",
+        "properties": {
+          "mesaId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "renglon": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mensaje": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "PropinaDTO": {
         "type": "object",
         "properties": {
@@ -511,10 +705,6 @@
             "format": "date-time"
           },
           "idMesa": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "idMozo": {
             "type": "integer",
             "format": "int32"
           }
