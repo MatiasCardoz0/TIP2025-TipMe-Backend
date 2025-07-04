@@ -10,7 +10,7 @@ namespace TipMeBackend.Services.MPService
 
         public MPService(Context context) { }
 
-        public async Task<Response<PreferenceID>> GetPreferenceId(decimal monto)
+        public async Task<Response<PreferenceID>> GetPreferenceId(int idMesa, decimal monto)
         {
             try
             {
@@ -31,11 +31,13 @@ namespace TipMeBackend.Services.MPService
                     },
                     BackUrls = new PreferenceBackUrlsRequest
                     {
-                        Success = "https://03f4-186-57-136-121.ngrok-free.app/home",
-                        Failure = "https://03f4-186-57-136-121.ngrok-free.app/home",
-                        Pending = "https://03f4-186-57-136-121.ngrok-free.app/home",
+                        Success = "https://03f4-186-57-136-121.ngrok-free.app/success",
+                        Failure = "https://03f4-186-57-136-121.ngrok-free.app/success",
+                        Pending = "https://03f4-186-57-136-121.ngrok-free.app/success",
                     },
                     AutoReturn = "approved",
+                    ExternalReference = $"{idMesa.ToString()}|{monto.ToString()}",
+                    
                 };
 
                 // Crea la preferencia usando el client
