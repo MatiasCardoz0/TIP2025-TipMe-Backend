@@ -31,12 +31,12 @@ namespace TipMeBackend.Services.MPService
                     },
                     BackUrls = new PreferenceBackUrlsRequest
                     {
-                        Success = "https://03f4-186-57-136-121.ngrok-free.app/success",
-                        Failure = "https://03f4-186-57-136-121.ngrok-free.app/success",
-                        Pending = "https://03f4-186-57-136-121.ngrok-free.app/success",
+                        Success = $"https://390e-186-57-233-166.ngrok-free.app/success?id={idMesa}&amount={monto}",
+                        Failure = $"https://390e-186-57-233-166.ngrok-free.app/success?id={idMesa}&amount={monto}",
+                        Pending = $"https://390e-186-57-233-166.ngrok-free.app/success?id={idMesa}&amount={monto}",
                     },
                     AutoReturn = "approved",
-                    ExternalReference = $"{idMesa.ToString()}|{monto.ToString()}",
+                    //ExternalReference = $"{idMesa.ToString()}|{monto.ToString()}",
                     
                 };
 
